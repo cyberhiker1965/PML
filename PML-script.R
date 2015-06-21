@@ -1,5 +1,4 @@
 # Machine Learning Project
-
 # enable multi-core processing
 library(doParallel)
 cl <- makeCluster(detectCores())
@@ -8,7 +7,7 @@ registerDoParallel(cl)
 library(AppliedPredictiveModeling)
 library(caret)
 
-# First download the training / testing datasets if they have 
+# First download the training dataset if they have 
 # not already been downloaded
 
 setwd("C:/Users/david/datasciencecoursera/Practical Machine Learning/Week2/Project")
@@ -64,3 +63,5 @@ confusionMatrix(testing$classe, testPC1)
 
 stopCluster(cl)
 # The stopCluster is necessary to terminate the extra processes
+
+

@@ -32,6 +32,8 @@ testPC2 <- predict(modelFit,newdata=testData)
 
 answers <- as.character(testPC2)
 
+print(answers)
+
 pml_write_files = function(x){
   n = length(x)
   for(i in 1:n){
